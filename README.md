@@ -1,2 +1,2 @@
 # Assembly qtspim
-This repository comprise of all the programs written in assembly langauge
+This repository comprise of all the programs written in MIPS assembly langauge
