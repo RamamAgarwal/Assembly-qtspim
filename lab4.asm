@@ -5,25 +5,30 @@
   
   .text
   main:
-	la $a0,str
-	li $v0,4
+	la $a0,str # loading the address of str in a0
+	
+	li $v0,4 # printing the first string 
 	syscall
 	
-	li $v0,5
+	li $v0,5 # loading the first integer
 	syscall
-	move $t0,$v0
+	
+	move $t0,$v0 # moving the value from v0 to t0
 	
     la $a0,str1
+	
 	li $v0,4
 	syscall
 	
 	li $v0,5
 	syscall
+	
 	move $t1,$v0
 	
 	add $t2, $t0, $t1
 	
 	la $a0,str2
+	
 	li $v0,4
 	syscall
 	

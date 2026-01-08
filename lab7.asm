@@ -9,10 +9,12 @@
 	
 	mflo $t2
 	move $a0, $t2
+	
 	li $v0, 1
 	syscall
 	
 	mfhi $a0
+	
 	li $v0, 1
 	syscall
 	

@@ -2,9 +2,9 @@
   buffer: .space 100
   .text
   main:
-	  li $t0,2
-	  li $t1,10
-	  div $a0, $t1, $t0
+	  li $t0,17
+	  li $t1,7
+	  div $a0, $t0, $t1 #LO stores quotient whereas HI remainder
 	  
 	  li $v0,1
 	  syscall

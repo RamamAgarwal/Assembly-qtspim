@@ -2,9 +2,9 @@
 str: .asciiz "Hello World"
 .text
 main:
-  la $a0, str
-  li $v0, 4
+  la $a0, str # loading accumulator
+  li $v0, 4 # print string system call
   syscall
 
-  li $v0, 10
+  li $v0, 10  # exiting the program
   syscall

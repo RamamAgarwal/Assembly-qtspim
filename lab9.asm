@@ -32,10 +32,6 @@ main:
 	li $v0,1
 	syscall
 	
-	li $a0,10
-	li $v0,11
-	syscall
-	
 	la $a0,str3
 	li $v0,4
 	syscall

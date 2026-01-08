@@ -25,8 +25,8 @@ main:
 	li $v0,4
 	syscall
 	
-	bne $t0, $t1, add_func
-	li $v0,10
+	bne $t0, $t1, add_func # branch not equal to then run add_func
+	li $v0,10 # otherwise
 	syscall
 	
 	add_func:
